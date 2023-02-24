@@ -21,3 +21,81 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+.idea
+
+#################################### BACK-TDD ####################################
+/back-tdd/target/
+/back-tdd/!.mvn/wrapper/maven-wrapper.jar
+/back-tdd/!**/src/main/**/target/
+/back-tdd/!**/src/test/**/target/
+
+/back-tdd/### STS ###
+/back-tdd/.apt_generated
+/back-tdd/.classpath
+/back-tdd/.factorypath
+/back-tdd/.project
+/back-tdd/.settings
+/back-tdd/.springBeans
+/back-tdd/.sts4-cache
+
+/back-tdd/### IntelliJ IDEA ###
+/back-tdd/.idea
+/back-tdd/*.iws
+/back-tdd/*.iml
+/back-tdd/*.ipr
+
+/back-tdd/### NetBeans ###
+/back-tdd//nbproject/private/
+/back-tdd/nbbuild/
+/back-tdd/dist/
+/back-tdd/nbdist/
+/back-tdd/.nb-gradle/
+/back-tdd/build/
+/back-tdd/!**/src/main/**/build/
+/back-tdd/!**/src/test/**/build/
+
+/back-tdd/### VS Code ###
+/back-tdd/.vscode/
+
+#################################### FRONT-TDD ####################################
+# Compiled output
+/front-tdd/dist
+/front-tdd/tmp
+/front-tdd/out-tsc
+/front-tdd/bazel-out
+
+# Node
+/front-tdd//node_modules
+/front-tdd/npm-debug.log
+/front-tdd/yarn-error.log
+
+# IDEs and editors
+/front-tdd/.idea/
+/front-tdd/.project
+/front-tdd/.classpath
+/front-tdd/.c9/
+/front-tdd/*.launch
+/front-tdd/.settings/
+/front-tdd/*.sublime-workspace
+
+# Visual Studio Code
+/front-tdd/.vscode/*
+/front-tdd/!.vscode/settings.json
+/front-tdd/!.vscode/tasks.json
+/front-tdd/!.vscode/launch.json
+/front-tdd/!.vscode/extensions.json
+/front-tdd/.history/*
+
+# Miscellaneous
+/front-tdd/.angular/cache
+/front-tdd/.sass-cache/
+/front-tdd/connect.lock
+/front-tdd/coverage
+/front-tdd/libpeerconnection.log
+/front-tdd/testem.log
+/front-tdd/typings
+
+/front-tdd/# System files
+/front-tdd/.DS_Store
+/front-tdd/Thumbs.db
