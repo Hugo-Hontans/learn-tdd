@@ -48,7 +48,7 @@ public class DisemVowelServiceTest {
     }
 
     @Test
-    void should_remove_all_vowels_of_string_when_disemVowel2() {
+    void should_remove_all_vowels_of_string_2_when_disemVowel() {
         String sentence = "No offense but,\nYour writing is among the worst I've ever read";
 
         String result = disemVowelService.disemVowel(sentence);
@@ -57,10 +57,64 @@ public class DisemVowelServiceTest {
     }
 
     @Test
-    void should_remove_all_vowels_of_string_when_disemVowel3() {
+    void should_remove_all_vowels_of_string_3_when_disemVowel() {
         String sentence = "What are you, a communist?";
 
         String result = disemVowelService.disemVowel(sentence);
+
+        assertEquals("Wht r ,  cmmnst?", result);
+    }
+
+    @Test
+    void should_return_empty_string_when_disemVowel2_with_a() {
+        String sentence = "a";
+
+        String result = disemVowelService.disemVowel2(sentence);
+
+        assertEquals("", result);
+    }
+
+    @Test
+    void should_return_empty_b_when_disemVowel2_with_b() {
+        String sentence = "b";
+
+        String result = disemVowelService.disemVowel2(sentence);
+
+        assertEquals("b", result);
+    }
+
+    @Test
+    void should_return_empty_b_when_disemVowel2_with_ab() {
+        String sentence = "ab";
+
+        String result = disemVowelService.disemVowel2(sentence);
+
+        assertEquals("b", result);
+    }
+
+    @Test
+    void should_remove_all_vowels_of_string_when_disemVowel2() {
+        String sentence = "This website is for losers LOL!";
+
+        String result = disemVowelService.disemVowel2(sentence);
+
+        assertEquals("Ths wbst s fr lsrs LL!", result);
+    }
+
+    @Test
+    void should_remove_all_vowels_of_string_2_when_disemVowel2() {
+        String sentence = "No offense but,\nYour writing is among the worst I've ever read";
+
+        String result = disemVowelService.disemVowel2(sentence);
+
+        assertEquals("N ffns bt,\nr wrtng s mng th wrst 'v vr rd", result);
+    }
+
+    @Test
+    void should_remove_all_vowels_of_string_3_when_disemVowel2() {
+        String sentence = "What are you, a communist?";
+
+        String result = disemVowelService.disemVowel2(sentence);
 
         assertEquals("Wht r ,  cmmnst?", result);
     }

@@ -18,4 +18,8 @@ public class DisemVowelService {
         }
         return newString;
     }
+
+    String disemVowel2(String sentence) {
+        return sentence.replaceAll("[aeiouyAEIOUY]", "");
+    }
 }
